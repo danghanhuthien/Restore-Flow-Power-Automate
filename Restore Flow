@@ -1,0 +1,6 @@
+Lệnh restore flows
+Bước1:Set-ExecutionPolicy RemoteSigned -Scope Process
+Bước2:Import-Module Microsoft.PowerApps.Administration.PowerShell
+Bước3:Add-PowerAppsAccount
+Bước4:Get-AdminFlow -EnvironmentName Default-<ID enviroment> -IncludeDeleted $true
+Bước5:Restore-AdminFlow -EnvironmentName Default-<ID enviroment> -FlowName <id flow>
